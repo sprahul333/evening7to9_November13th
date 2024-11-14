@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+
+    <parameter name="URL" value="https://practicetestautomation.com/practice-test-login/"></parameter>
+
+    <test verbose="2" preserve-order="true"
+          name="Login_Scenario">
+        <parameter name="Browser" value="Chrome"></parameter>
+        <classes>
+            <class name="loginApp.LoginTestCases"/>
+        </classes>
+    </test>
+
+    <test verbose="2" preserve-order="true"
+          name="Login_Scenario_Firefox">
+        <parameter name="Browser" value="Firefox"></parameter>
+        <classes>
+            <class name="loginApp.LoginTestCases"/>
+        </classes>
+    </test>
+
+    <test verbose="2" preserve-order="true"
+          name="Login_Scenario_Edge">
+        <parameter name="Browser" value="Edge"></parameter>
+        <classes>
+            <class name="loginApp.LoginTestCases"/>
+        </classes>
+    </test>
+</suite>
